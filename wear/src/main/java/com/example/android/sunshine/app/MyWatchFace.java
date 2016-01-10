@@ -426,6 +426,11 @@ public class MyWatchFace extends CanvasWatchFaceService {
             return BitmapFactory.decodeStream(assetInputStream);
         }
 
+        @Override
+        public void onDataChanged(DataEventBuffer dataEventBuffer) {
+
+        }
+
         // wtf!? Thanks to https://developers.google.com/android/guides/api-client#Sync
         private class loadBitmapFromAsset extends AsyncTask {
 

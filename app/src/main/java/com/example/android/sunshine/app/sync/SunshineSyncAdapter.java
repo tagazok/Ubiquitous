@@ -362,7 +362,7 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
 
                 cVVector.add(weatherValues);
 
-                if (i == 7) {
+                if (i == 0) {
                     PutDataMapRequest mapRequest = PutDataMapRequest.create("/weather-data");
                     mapRequest.getDataMap().putInt("temp-high", (int) high);
                     mapRequest.getDataMap().putInt("temp-low",(int)low);
