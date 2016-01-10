@@ -364,6 +364,7 @@ public class SunshineSyncAdapter extends AbstractThreadedSyncAdapter {
                     PutDataMapRequest mapRequest = PutDataMapRequest.create("/weather-data");
                     mapRequest.getDataMap().putInt("temp-high",(int)high);
                     mapRequest.getDataMap().putInt("temp-low",(int)low);
+                    mapRequest.getDataMap().putInt("timestamp", (int)System.nanoTime());
 
                     PutDataRequest request = mapRequest.asPutDataRequest();
 
