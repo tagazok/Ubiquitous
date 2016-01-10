@@ -383,7 +383,7 @@ public class MyWatchFace extends CanvasWatchFaceService {
 
 
         // TODO : See why this is not working
-        /* public void onDataChanged(DataEventBuffer dataEventBuffer) {
+         public void onDataChanged(DataEventBuffer dataEventBuffer) {
             Log.d("datachanged", "onDataChanged called");
             for (DataEvent event : dataEventBuffer) {
                 DataItem item = event.getDataItem();
@@ -402,7 +402,7 @@ public class MyWatchFace extends CanvasWatchFaceService {
                 }
                 Log.d("wtf", mTempLow);
             }
-        }*/
+        }
 
 
 
@@ -424,11 +424,6 @@ public class MyWatchFace extends CanvasWatchFaceService {
             }
             // decode the stream into a bitmap
             return BitmapFactory.decodeStream(assetInputStream);
-        }
-
-        @Override
-        public void onDataChanged(DataEventBuffer dataEventBuffer) {
-
         }
 
         // wtf!? Thanks to https://developers.google.com/android/guides/api-client#Sync
