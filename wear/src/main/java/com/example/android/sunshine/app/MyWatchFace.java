@@ -381,8 +381,9 @@ public class MyWatchFace extends CanvasWatchFaceService {
 
         }
 
-        @Override
-        public void onDataChanged(DataEventBuffer dataEventBuffer) {
+
+        // TODO : See why this is not working
+        /* public void onDataChanged(DataEventBuffer dataEventBuffer) {
             Log.d("datachanged", "onDataChanged called");
             for (DataEvent event : dataEventBuffer) {
                 DataItem item = event.getDataItem();
@@ -401,7 +402,7 @@ public class MyWatchFace extends CanvasWatchFaceService {
                 }
                 Log.d("wtf", mTempLow);
             }
-        }
+        }*/
 
 
 
